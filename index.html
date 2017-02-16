@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<title>RDP</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2 {
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(background.jpg) no-repeat;
+    background-size: cover; 
+}
+</style>
+<body>
+<video playsinline autoplay muted loop poster="background" id="bgvid">
+    <source src="background.mp4" type="video/mp4">
+</video>
+
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo"><b>RDP Corporation</b></h1>
+    <h2>Technical Services. Fast.</h2>
+    
+  </div>
+</header>
+
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <ul class="w3-navbar w3-white w3-center w3-padding-8 w3-opacity-min w3-hover-opacity-off">
+    <li style="width:25%"><a href="#home" class="w3-margin-left w3-round">Home</a></li>
+    <li style="width:25%"><a href="products.html" class="w3-round">Products</a></li>
+    <li style="width:25%"><a href="#Manufacturers" class="w3-round">Manufacturers</a></li>
+    <li style="width:25%"><a href="#Contact" class="w3-margin-right w3-round w3-hover-black">Contact</a></li>
+  </ul>
+</div>
+
+<!-- About -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-grey"><b>About RDP</b></h1>
+    <img class="w3-round w3-center" src="bldg.jpg" style="width:100%;margin:32px 0">
+    <p>RDP Corporation is a Manufacturers' Representative and sales agency, specializing in instrumentation for measurement, calibration, sensing, data acquisition, testing, and analysis for the industrial, research, and scientific communities.
+    RDP, an employee owned company, has been providing solutions to the most demanding technical issues since 1955.
+
+    Offices are maintained throughout the area to support our customers in Ohio, Michigan, Indiana, Kentucky, West Virginia, and western Pennsylvania.
+    </p><br>
+    <p class="w3-center"><a href="#wedding" class="w3-btn w3-round w3-padding-large w3-large">Project Portfolio</a></p>
+  </div>
+</div>
+
+<!-- Background photo -->
+<div class="w3-display-container bgimg2">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">World-Class Instrumentation</h1><br>
+    <h2>For Consumer and Industrial Applications</h2>
+  </div>
+</div>
+
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
+  <div class="w3-content">
+    <h1 class="w3-text-grey"><b>Portfolio</b></h1>
+    <img class="w3-round-large w3-grayscale-min" src="code.png" style="width:100%;margin:64px 0">
+    <div class="w3-row">
+      <div class="w3-half">
+        <h2>When</h2>
+        <p>1 Insert</p>
+        <p>2 Insert</p>
+      </div>
+      <div class="w3-half">
+        <h2>Division 2</h2>
+        <p>3 Insert</p>
+        <p>4 insert</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COntact section -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="Contact">
+  <h1>Contact RDP</h1>
+  <p class="w3-large">We will respond as quickly as possible.</p>
+  <p class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">CONTACT</button>
+  </p>
+</div>
+
+
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-8 w3-animate-zoom w3-padding-jumbo" style="max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn w3-hover-text-grey w3-margin">x</span>
+      <h1 class="w3-wide">CONTACT</h1>
+      <p>We will get back to you as soon as possible.</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="Email(s)" name="Email">
+      </form>
+      <p><i>Thank you!</i></p>
+      <div class="w3-row">
+        <div class="w3-center">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-btn-block w3-green">Submit</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>2017 Daniel Corcoran</p>
+
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
+</html>
